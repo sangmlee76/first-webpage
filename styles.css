@@ -15,29 +15,30 @@ ul{
 
 }
 
-h1{
+h1, h3{
 
     text-align: center;
 }
-
 
 
 .primary{
     border: 1px solid blue;
     background-color: lightskyblue;
     text-align: center;
-    margin: 30px 20px
+    margin: 30px 20px;
 }
 
-.firstplace{
-    : center;
-}
 
 .alternate{
     margin: 20px
 }
 
 
+#user-vote{
+    border: 1px solid gold;
+    text-align: center;
+    background-color: #f8f0c6
+}
 
 p{
     text-align: center;
