@@ -7,7 +7,7 @@ body{
 li{
     display: inline-block;
     text-align: center;
-    margin: 10px 100px 20px
+    margin: 10px 100px 20px;
 }
 
 ul{
@@ -26,18 +26,20 @@ h1, h3{
     background-color: lightskyblue;
     text-align: center;
     margin: 30px 20px;
+    padding: 40px;
 }
 
 
 .alternate{
-    margin: 20px
+    margin: 20px;
+    
 }
 
 
 #user-vote{
     border: 1px solid gold;
     text-align: center;
-    background-color: #f8f0c6
+    background-color: #f8f0c6;
 }
 
 p{
