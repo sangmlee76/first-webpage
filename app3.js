@@ -14,7 +14,7 @@ the function returns the user's vote and the associated star rating, is applicab
 */
 
 function userVote(){
-    var userInput = prompt("Please vote: Input '1' for Burger 1, Input '2' for Burger 2, and Input '3' for Burger 3. Type '0' to abstain.");
+    var userInput = prompt("Based on a recent poll, Seattlites selected the following as the top 3 burgers in Seattle - 1st place: Uneeda, 2nd place: Red Mill, 3rd place: Rain City. Now it's your turn! Please submit your vote as follows: Input '1' for Uneeda, Input '2' for Red Mill, and Input '3' for Rain City. Type '0' to abstain.");
 
     while (userInput != 1 && userInput !=2 && userInput != 3 && userInput != 0){
         userInput = prompt("Please vote: Input '1' for Burger 1, Input '2' for Burger 2, and Input '3' for Burger 3. Type '0' to abstain.");
@@ -22,26 +22,26 @@ function userVote(){
 
     var starOutput = ''
     var stars = '<img src="star.jpg" width="20" />'
-    var Burger_1 = 0;
-    var Burger_2 = 0;
-    var Burger_3 = 0;
+    var uneeda = 0;
+    var redMill = 0;
+    var rainCity = 0;
 
     if (userInput == 0) {
         alert('Have a nice day!');
     } else if (userInput == 1) {
-        Burger_1++;
+        uneeda++;
     } else if (userInput == 2) {
-        Burger_2++;
+        redMill++;
     } else if (userInput == 3) {
-        Burger_3++;
+        rainCity++;
     } else {
         userInput = prompt("Please enter a valid option: 1, 2, or 3. If you wish abstain, type 0");
     }
 
     // sets the variable that will become the return value for the user's vote
-    var voteOutput = '<li> <b>Burger 1:</b>  ' + Burger_1 + '</li>' +
-    '<li> <b>Burger 2:</b>  ' + Burger_2 + '</li>' +
-    '<li> <b>Burger 3:</b>  ' + Burger_3 + '</li>'
+    var voteOutput = '<li> <b>Uneeda Burger:</b>  ' + uneeda + '</li>' +
+    '<li> <b>Red Mill Burger:</b>  ' + redMill + '</li>' +
+    '<li> <b>Rain City Burger:</b>  ' + rainCity + '</li>'
     
     // obtains the user input on star rating if they casted a valid vote
     if (userInput != 0){
